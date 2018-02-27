@@ -1,0 +1,6 @@
+<p> Contact list works! </p>
+<ul class="contacts layouttheme">
+    <li *ngFor="let contact of contacts" (click)="select(contact)" routerLink="{{ '../' + contact.id }}">
+        <div class="badge layouttheme">{{contact.id}} </div>{{contact.firstName}}&nbsp;{{contact.lastName}}
+    </li>
+</ul>

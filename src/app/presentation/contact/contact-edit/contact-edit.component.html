@@ -1,0 +1,31 @@
+<p> Contact edit works! </p>
+<div>
+    <label>Name: </label>
+    <input [(ngModel)]="contact.firstName" placeholder="Firstname" />
+</div>
+<div>
+    <label>Lastname: </label>
+    <input [(ngModel)]="contact.lastName" placeholder="Lastname" />
+</div>
+<div>
+    <label>Company: </label>
+    <input [(ngModel)]="contact.company" placeholder="Companny" />
+</div>
+<div>
+    <label>Address: </label>
+    <input [(ngModel)]="contact.address" placeholder="Address" />
+</div>
+<div>
+    <label>City: </label>
+    <input [(ngModel)]="contact.city" placeholder="City" />
+</div>
+<div>
+    <label>Email: </label>
+    <input [(ngModel)]="contact.email" placeholder="Email" />
+</div>
+<div>
+    <label>Phone: </label>
+    <input [(ngModel)]="contact.phone" placeholder="Phone" />
+</div>
+<button (click)="saveContact(contact)"> Save </button>
+<button (click)="cancelEdit()"> Cancel </button>
