@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
-const routes = [ 
+const routes = [
     { path: '', redirectTo: 'contact', pathMatch: 'full'}
 ];
 
@@ -9,4 +9,5 @@ const routes = [
     imports: [ RouterModule.forRoot(routes) ],
     exports: [ RouterModule ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

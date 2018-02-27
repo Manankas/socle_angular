@@ -7,5 +7,5 @@ import { Component , HostBinding } from '@angular/core';
 })
 export class AppComponent {
     public title = 'Socle Angular';
-    constructor() { }    
+    constructor() { }
 }

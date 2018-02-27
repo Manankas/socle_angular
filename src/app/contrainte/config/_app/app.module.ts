@@ -5,17 +5,19 @@ import { CommonModule } from '@angular/common';
 
 import { AppComponent } from '../../../presentation/_app';
 // Modules présentation:
-import { ContactPresentationModule } from "../../../presentation/contact";
+import { ContactPresentationModule } from '../../../presentation/contact';
+import { ProduitPresentationModule } from '../../../presentation/produit';
+
 // Module applicatif:
-import { ApplicatifModule } from "../../../service-applicatif/applicatif.module";
+import { ApplicatifModule } from '../../../service-applicatif/applicatif.module';
 // Module metier:
-import { MetierModule } from "../../../service-metier/metier.module";
+import { MetierModule } from '../../../service-metier/metier.module';
 // Module business-delegate:
-import { BusinessDelegateModule } from "../../../service-business-delegate/business-delegate.module";
+import { BusinessDelegateModule } from '../../../service-business-delegate/business-delegate.module';
 // App routing module:
 import { AppRoutingModule } from './app-routing.module';
 // Shared pipes, directives, ...
-import { AwesomePipe, HighlightDirective } from "../../../presentation/shared";
+import { AwesomePipe, HighlightDirective } from '../../../presentation/shared';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -25,6 +27,7 @@ import { AwesomePipe, HighlightDirective } from "../../../presentation/shared";
         CommonModule,
         AppRoutingModule,
         ContactPresentationModule,
+        ProduitPresentationModule,
         ApplicatifModule,
         MetierModule,
         BusinessDelegateModule

@@ -6,5 +6,5 @@ export class ContactDo {
     address: string;
     city: string;
     email: string;
-    phone: string;       
+    phone: string;
 }

@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 // Components of the contact feature area:
-import { ContactComponent } from "./contact-root";
-import { ContactDetailComponent } from "./contact-detail";
+import { ContactComponent } from './contact-root';
+import { ContactDetailComponent } from './contact-detail';
 import { ContactEditComponent } from './contact-edit';
-import { ContactListComponent } from "./contact-list";
+import { ContactListComponent } from './contact-list';
 // Service available only for the contact feature area:
-import { ContactSharedService } from "./contact-shared";
+import { ContactSharedService } from './contact-shared';
 // Contact route module:
-import { ContactRoutingModule } from "../../contrainte/config/contact/contact-routing.module";
+import { ContactRoutingModule } from '../../contrainte/config/contact/contact-routing.module';
 
 @NgModule({
     imports: [
@@ -18,10 +18,10 @@ import { ContactRoutingModule } from "../../contrainte/config/contact/contact-ro
         ContactRoutingModule
     ],
     declarations: [
-        ContactComponent, 
-        ContactDetailComponent,        
+        ContactComponent,
+        ContactDetailComponent,
         ContactEditComponent,
-        ContactListComponent        
+        ContactListComponent
     ],
     providers: [
         ContactSharedService

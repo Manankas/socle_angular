@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { ContactMetierServiceProviders } from "./contact";
+import { ContactMetierServiceProviders } from './contact';
 
 @NgModule({
     providers: [
-        ...ContactMetierServiceProviders        
+        ...ContactMetierServiceProviders
     ]
 })
 export class MetierModule { }
