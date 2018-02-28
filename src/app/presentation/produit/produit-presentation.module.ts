@@ -6,6 +6,6 @@ import { ProduitListComponent } from './produit-list/produit-list.component';
   imports: [
     CommonModule
   ],
-  declarations: [ProduitListComponent]
+  declarations: [ProduitListComponent]  // ce component va faire partie de ce module (module = bolonganjavatra)
 })
 export class ProduitPresentationModule { }

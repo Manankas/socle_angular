@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
-import { ContactApplicatifServiceProviders } from "./contact";
-import { ContactFactoryService } from "../contrainte/factory/contact";
+import { ContactApplicatifServiceProviders } from './contact';
+import { ContactFactoryService } from '../contrainte/factory/contact';
 
 @NgModule({
-    providers: [        
+    providers: [
         ...ContactApplicatifServiceProviders,
         ContactFactoryService
     ]

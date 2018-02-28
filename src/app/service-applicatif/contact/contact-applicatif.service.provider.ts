@@ -1,11 +1,11 @@
-import { 
+import {
     ContactCudApplicatifServiceACI,
-    ContactCudApplicatifService ,    
+    ContactCudApplicatifService ,
     ContactCudApplicatifMockService,
-    ContactReadApplicatifServiceACI,    
-    ContactReadApplicatifService,    
-    ContactReadApplicatifMockService    
-} from ".";
+    ContactReadApplicatifServiceACI,
+    ContactReadApplicatifService,
+    ContactReadApplicatifMockService
+} from '.';
 
 export let ContactApplicatifServiceProviders = [
     { provide: ContactCudApplicatifServiceACI, useClass: ContactCudApplicatifService },
