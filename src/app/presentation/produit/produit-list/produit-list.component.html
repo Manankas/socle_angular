@@ -1,3 +1,9 @@
 <p>
   produit-list works!
 </p>
+<ul class="contacts layouttheme">
+    <!-- <li *ngFor="let contact of contacts" (click)="select(contact)" routerLink="{{ '../' + contact.id }}"> -->
+      <li *ngFor="let produit of produits" (click)="select(produit)">
+        <div class="badge layouttheme">{{produit.id}} </div>{{produit.designation}}
+    </li>
+</ul>

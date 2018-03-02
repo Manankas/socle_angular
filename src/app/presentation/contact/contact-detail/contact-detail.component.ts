@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 import { ContactDto } from '../../../donnee/contact';
-import { ContactSharedService  } from "../contact-shared";
+import { ContactSharedService  } from '../contact-shared';
 
 @Component({
     selector: 'app-contact-detail',
@@ -12,10 +12,11 @@ import { ContactSharedService  } from "../contact-shared";
 })
 export class ContactDetailComponent implements OnInit {
     constructor(private activatedRoute: ActivatedRoute, private contactSharedService: ContactSharedService, private router: Router) { }
+    // tslint:disable-next-line:member-ordering
     contact: ContactDto;
     ngOnInit() {
         // Get contact detail from resolve:
-        this.activatedRoute.data.subscribe(data => {           
+        this.activatedRoute.data.subscribe(data => {
             this.contact = data.contact;
         });
     }
